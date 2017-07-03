@@ -1,0 +1,8 @@
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 005: ID 04f3:24a1 Elan Microelectronics Corp. 
+Bus 001 Device 004: ID 138a:0091 Validity Sensors, Inc. 
+Bus 001 Device 003: ID 0cf3:e300 Qualcomm Atheros Communications 
+Bus 001 Device 006: ID 0c45:6713 Microdia 
+Bus 001 Device 007: ID 8644:800b Intenso GmbG Micro Line (4GB)
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
