@@ -11,14 +11,16 @@ CONFIG_ATH10K=m
 CONFIG_ATH10K_PCI=m
 ```
 
-Download working firmware:
+Install linux-firmware:
 
 ```
-wget -O /lib/firmware/ath10k/QCA6174/hw3.0/firmware-4.bin "https://github.com/FireWalkerX/ath10k-firmware/blob/7e56cbb94182a2fdab110cf5bfeded8fd1d44d30/QCA6174/hw3.0/firmware-4.bin_WLAN.RM.2.0-00180-QCARMSWPZ-1?raw=true
-wget -O /lib/firmware/ath10k/QCA6174/hw3.0/board.bin "https://github.com/FireWalkerX/ath10k-firmware/blob/7e56cbb94182a2fdab110cf5bfeded8fd1d44d30/QCA6174/hw3.0/board-2.bin?raw=true
+cave resolve -zx linux-firmware
 ```
 
-Note: CONFIG_FIRMWARE_IN_KERNEL has no incidence regarding to how wifi works
+(Or, if you are not on exherbo, get it from https://git.kernel.org/cgit/linux/kernel/git/firmware/linux-firmware.git/ )
+
+Note: You *have to* enable module support *and* make `ATH10K` and `ATH10K_PCI` modules.
+Note 2: `CONFIG_FIRMWARE_IN_KERNEL` has no incidence regarding to how wifi works
 
 
 ## Tried, not working
@@ -40,5 +42,3 @@ MODULES=n
 CONFIG_ATH10K=y
 CONFIG_ATH10K_PCI=y
 ```
-
-So, if ATH10K is not enabled *as a module*, it won't work
