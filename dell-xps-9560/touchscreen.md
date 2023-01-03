@@ -11,10 +11,10 @@ Activate the following:
 ```
 
 ```
--> Device Drivers                                                        
-  -> Input device support                                                
+-> Device Drivers
+  -> Input device support
     -> Generic input layer (needed for keyboard, mouse, ...) (INPUT [=y])
-      -> Touchscreens (INPUT_TOUCHSCREEN [=y])                           
+      -> Touchscreens (INPUT_TOUCHSCREEN [=y])
         -> Elan eKTF2127 I2C touchscreen (TOUCHSCREEN_EKTF2127)
         -> Elan eKTH I2C touchscreen (TOUCHSCREEN_ELAN)
 ```
